@@ -166,14 +166,21 @@
 		<p class="script nyc">made with ♥ in NYC</p>
 
     <script>
-      window.addEventListener('load', function() {
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 				var tiles = document.getElementsByClassName('tile')
-				Array.prototype.forEach.call(tiles, function(el, i) {
-						setTimeout(() => {
-							el.className += " visible";
-						}, i*100)
+				Array.prototype.forEach.call(tiles, function(el) {
+					el.className += " visible";
 				});
-			});
+			}else{
+				window.addEventListener('load', function() {
+					var tiles = document.getElementsByClassName('tile')
+					Array.prototype.forEach.call(tiles, function(el, i) {
+							setTimeout(() => {
+								el.className += " visible";
+							}, i*100)
+					});
+				});
+			}
     </script>
   </body>
 </html>
