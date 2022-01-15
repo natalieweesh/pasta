@@ -134,17 +134,14 @@ header, .about {
   text-align: center;
 }
 
+.nyc {
+	margin-top: 4rem;
+	text-align: center;
+}
+
 .contact a {
   color: #a66869;
   text-decoration: none;
-}
-.green {
-	background: rgb(214,224,169);
-	background: linear-gradient(156deg, rgba(214,224,169,1) 27%, rgba(255,255,255,1) 100%);
-}
-.pink {
-	background: rgb(224,169,169);
-	background: linear-gradient(342deg, rgba(224,169,169,1) 27%, rgba(255,255,255,1) 100%);
 }
 
 .gifs {
